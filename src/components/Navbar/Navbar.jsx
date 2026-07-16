@@ -46,9 +46,10 @@ const Navbar = () => {
             {/* Logo */}
             <Link
               to="/"
-              className="text-2xl font-bold tracking-wide text-[#053d27] z-50"
+              className="flex items-center justify-center z-50"
             >
-              Addtech<span className="text-black">Infinium</span>
+              {/* Addtech<span className="text-black">Infinium</span> */}
+              <img src="/addtitanslogo.png" alt="Addtech Infinium Logo" className="max-h-12 w-auto object-contain" />
             </Link>
 
             {/* Desktop Menu */}

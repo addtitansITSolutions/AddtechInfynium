@@ -153,7 +153,7 @@ const Footer = () => {
 
               <p>📧 info@addtechinfinium.com</p>
 
-              <p>📞 +91 98765 43210</p>
+              <p>📞 +91-8447286658</p>
 
               <p>
                 📍 New Delhi,

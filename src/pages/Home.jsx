@@ -12,7 +12,7 @@ import Partners from '../components/Partener'
 function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <Services />
@@ -20,7 +20,7 @@ function Home() {
       <Process />
       <Testimonials />
       <Partners />
-      <Footer />
+      {/* <Footer /> */}
       {/* <div className="bg-red-500 text-white text-5xl p-10">
             Tailwind Test
       </div> */}
