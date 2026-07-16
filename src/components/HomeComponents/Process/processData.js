@@ -13,6 +13,7 @@ export const processSteps = [
     subtitle: "Understanding Your Vision",
     icon: Search,
     image: "/process/discovery.png",
+    phoneimage: "/process/discoveryphone.png",
     description:
       "Every successful project begins with understanding your business. We analyze your goals, audience, competitors, and project requirements to create a strong foundation for development.",
     points: [
@@ -30,6 +31,7 @@ export const processSteps = [
     subtitle: "Creating The Roadmap",
     icon: ClipboardList,
     image: "/process/planning.png",
+    phoneimage: "/process/planningphone.png",
     description:
       "Once we understand your vision, we prepare a detailed strategy including UI/UX planning, technology selection, timelines, milestones, and resource allocation.",
     points: [
@@ -47,6 +49,7 @@ export const processSteps = [
     subtitle: "Turning Ideas Into Reality",
     icon: Code2,
     image: "/process/development.png",
+    phoneimage: "/process/developmentphone.png",
     description:
       "Our developers build secure, scalable, and high-performance solutions using modern technologies while maintaining clean architecture and industry best practices.",
     points: [
@@ -64,6 +67,7 @@ export const processSteps = [
     subtitle: "Deliver, Monitor & Scale",
     icon: Rocket,
     image: "/process/launch.png",
+    phoneimage: "/process/launchphone.png",
     description:
       "After deployment, we continue optimizing your product through monitoring, maintenance, updates, and performance improvements to ensure long-term success.",
     points: [

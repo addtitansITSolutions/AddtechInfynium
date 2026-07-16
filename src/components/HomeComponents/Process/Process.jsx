@@ -171,11 +171,11 @@ const Process = () => {
                         </div>
 
                         {/* Card Graphic Column */}
-                        <div className="bg-[#edf7f2] flex items-center justify-center p-6">
+                        <div className="bg-[#edf7f2] flex items-center justify-center p-0">
                           <img
                             src={step.image}
                             alt={step.title}
-                            className="w-56 object-contain"
+                            className="w-full min-h-full object-cover"
                           />
                         </div>
 
@@ -229,11 +229,11 @@ const Process = () => {
                         </div>
 
                         {/* Visual graphic side */}
-                        <div className="bg-[#edf7f2] flex items-center justify-center p-6 order-1 xs:order-2 min-h-[160px] xs:min-h-auto">
+                        <div className="bg-[#edf7f2] flex items-center justify-center order-1 xs:order-2 min-h-[160px] xs:min-h-auto">
                           <img
-                            src={step.image}
+                            src={step.phoneimage}
                             alt={step.title}
-                            className="w-28 sm:w-32 object-contain"
+                            className="w-full sm:w-full object-cover"
                           />
                         </div>
 
