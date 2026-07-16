@@ -39,8 +39,8 @@ const Process = () => {
         {/* FIX: Default grid-cols-1 for mobile stack, switch to lg:grid-cols-2 for desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           
-          {/* LEFT SIDE: Heading Area (Sticky on Desktop) */}
-          <div className="lg:sticky lg:top-32 h-fit">
+          {/* TOP SIDE: Heading Area (only on MOBILE & TABLET }) */}
+          <div className="lg:sticky lg:hidden lg:top-32 h-fit">
             <span className="uppercase tracking-[4px] font-semibold text-[#053d27] text-sm lg:text-base">
               Our Process
             </span>
@@ -94,7 +94,7 @@ const Process = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDE: Dynamic Switching Content Panels */}
+          {/* LEFT SIDE: Dynamic Switching Content Panels */}
           <div>
             
             {/* Desktop View Cards Stack */}
@@ -244,6 +244,61 @@ const Process = () => {
               </Swiper>
             </div>
 
+          </div>
+
+          {/* RIGHT SIDE: Heading Area (Only on Desktop) */}
+          <div className="hidden lg:block lg:sticky lg:top-32 h-fit">
+            <span className="uppercase tracking-[4px] font-semibold text-[#053d27] text-sm lg:text-base">
+              Our Process
+            </span>
+
+            <h2 className="mt-4 lg:mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+              From Idea To Launch,
+              <br />
+              We Handle Everything.
+            </h2>
+
+            <p className="mt-6 lg:mt-8 text-gray-600 leading-relaxed lg:leading-8 text-base lg:text-lg">
+              Every successful digital product follows a clear roadmap. We
+              combine research, planning, engineering and continuous support to
+              transform your ideas into scalable business solutions.
+            </p>
+
+            <button className="mt-8 lg:mt-10 bg-[#053d27] text-white rounded-full px-8 py-4 flex items-center gap-3 hover:scale-105 transition w-full sm:w-auto justify-center">
+              Start Your Project
+              <ArrowRight size={18} />
+            </button>
+
+            {/* Navigation Progress Indicators (Hidden completely on mobile/tablets) */}
+            <div className="mt-16 hidden lg:block">
+              <div className="flex justify-between mb-3">
+                {processSteps.map((step, index) => (
+                  <div
+                    key={step.id}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 font-medium
+                    ${
+                      index <= activeStep
+                        ? "bg-[#053d27] text-white"
+                        : "bg-gray-200 text-gray-500"
+                    }`}
+                  >
+                    {step.number}
+                  </div>
+                ))}
+              </div>
+
+              <div className="relative h-2 rounded-full bg-gray-200 overflow-hidden">
+                <motion.div
+                  animate={{
+                    width: `${((activeStep + 1) / processSteps.length) * 100}%`,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                  className="absolute left-0 top-0 h-full bg-[#053d27]"
+                />
+              </div>
+            </div>
           </div>
 
         </div>

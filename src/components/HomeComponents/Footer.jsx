@@ -95,7 +95,9 @@ const Footer = () => {
 
             <div className="space-y-4">
 
-              <Link to="/">Home</Link>
+              <Link to="/" className="block">
+                Home
+              </Link>
 
               <Link to="/about" className="block">
                 About
