@@ -1,17 +1,74 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", path: "/" },
+
   { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
+
+  {
+    name: "Services",
+    path: "/services",
+    megaMenu: [
+      {
+        title: "Affiliate Marketing",
+        items: [
+          {
+            name: "Affiliate Marketing",
+            path: "/services/affiliate-marketing",
+          },
+          {
+            name: "Performance Marketing",
+            path: "/services/performance-marketing",
+          },
+        ],
+      },
+
+      {
+        title: "Digital Marketing",
+        items: [
+          {
+            name: "Digital Marketing",
+            path: "/services/digital-marketing",
+          },
+          {
+            name: "SEO",
+            path: "/services/seo",
+          },
+        ],
+      },
+
+      {
+        title: "Influencer Marketing",
+        items: [
+          {
+            name: "Influencer Marketing",
+            path: "/services/influencer-marketing",
+          },
+        ],
+      },
+
+      {
+        title: "Ecommerce",
+        items: [
+          {
+            name: "Ecommerce Marketing",
+            path: "/services/ecommerce-marketing",
+          },
+        ],
+      },
+    ],
+  },
+
   { name: "Portfolio", path: "/portfolio" },
+
   { name: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
 
   // Close mobile menu automatically if the window is resized to desktop size
@@ -54,20 +111,112 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <nav className="hidden lg:flex items-center gap-10">
-              {navLinks.map((item) => {
-                const isActive = location.pathname === item.path;
-                return (
-                  <Link
-                    key={item.name}
-                    to={item.path}
-                    className={`font-medium transition-colors duration-200 hover:text-[#053d27] ${
-                      isActive ? "text-[#053d27]" : "text-gray-600"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                );
-              })}
+                {navLinks.map((item) => {
+                  if (item.megaMenu) {
+                    return (
+                      <div
+                        key={item.name}
+                        className="relative group"
+                      >
+                        <Link
+                          to={item.path}
+                          className="flex items-center gap-1 font-medium text-gray-600 hover:text-[#053d27] transition"
+                        >
+                          {item.name}
+
+                          <ChevronDown
+                            size={16}
+                            className="transition-transform duration-300 group-hover:rotate-180"
+                          />
+                        </Link>
+                        <div
+                          className="
+                          absolute
+                          left-1/2
+                          -translate-x-1/2
+                          top-full
+                          pt-6
+                          opacity-0
+                          invisible
+                          group-hover:opacity-100
+                          group-hover:visible
+                          transition-all
+                          duration-300
+                          "
+                        >
+
+                          <div
+                            className="
+                            bg-white
+                            rounded-3xl
+                            shadow-2xl
+                            border
+                            border-gray-100
+                            p-8
+                            w-[850px]
+                            grid
+                            grid-cols-4
+                            gap-8
+                            "
+                          >
+
+                            {item.megaMenu.map((category) => (
+
+                              <div key={category.title}>
+
+                                <h3 className="font-bold text-[#053d27] mb-4">
+
+                                  {category.title}
+
+                                </h3>
+
+                                <div className="space-y-3">
+
+                                  {category.items.map((sub) => (
+
+                                    <Link
+                                      key={sub.name}
+                                      to={sub.path}
+                                      className="block text-gray-600 hover:text-[#053d27] transition"
+                                    >
+                                      {sub.name}
+                                    </Link>
+
+                                  ))}
+
+                                </div>
+
+                              </div>
+
+                            ))}
+
+                          </div>
+
+                        </div>
+                      </div>
+                    );
+                  }
+
+                  const isActive = location.pathname === item.path;
+
+                  return (
+
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className={`font-medium transition ${
+                        isActive
+                          ? "text-[#053d27]"
+                          : "text-gray-600 hover:text-[#053d27]"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+
+                  );
+
+                })}
+
             </nav>
 
             {/* Desktop Button */}
@@ -102,32 +251,115 @@ const Navbar = () => {
 
       {/* Slide-out Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl z-40 lg:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-screen w-[280px] sm:w-[320px]
+        bg-white shadow-2xl z-40 lg:hidden
+        transform transition-transform duration-300 ease-in-out
+        overflow-y-auto overscroll-contain
+        ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col h-full pt-28 px-8 pb-8 justify-between">
+        <div className="min-h-full flex flex-col pt-28 px-8 pb-8">
           {/* Mobile Navigation Links */}
           <nav className="flex flex-col space-y-6">
             {navLinks.map((item) => {
+
+              if (item.megaMenu) {
+
+                return (
+
+                  <div key={item.name}>
+
+                    <button
+                      onClick={() => setServicesOpen(!servicesOpen)}
+                      className="w-full flex items-center justify-between text-lg font-medium text-gray-700 hover:text-[#053d27]"
+                    >
+                      <span>{item.name}</span>
+
+                      <span
+                        className={`transition-transform duration-300 ${
+                          servicesOpen ? "rotate-180" : ""
+                        }`}
+                      >
+                        ▼
+                      </span>
+
+                    </button>
+
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        servicesOpen
+                          ? "max-h-[600px] mt-4"
+                          : "max-h-0"
+                      }`}
+                    >
+
+                      {item.megaMenu.map((category) => (
+
+                        <div key={category.title} className="ml-4 mb-5">
+
+                          <h4 className="font-semibold text-[#053d27]">
+
+                            {category.title}
+
+                          </h4>
+
+                          <div className="mt-2 ml-4 flex flex-col gap-2">
+
+                            {category.items.map((sub) => (
+
+                              <Link
+                                key={sub.name}
+                                to={sub.path}
+                                onClick={() => {
+                                  setOpen(false);
+                                  setServicesOpen(false);
+                                }}
+                                className="text-gray-600 hover:text-[#053d27] text-sm"
+                              >
+                                • {sub.name}
+                              </Link>
+
+                            ))}
+
+                          </div>
+
+                        </div>
+
+                      ))}
+
+                    </div>
+
+                  </div>
+
+                );
+
+              }
+
               const isActive = location.pathname === item.path;
+
               return (
+
                 <Link
                   key={item.name}
                   to={item.path}
                   onClick={() => setOpen(false)}
                   className={`text-lg font-medium transition-colors duration-200 hover:text-[#053d27] ${
-                    isActive ? "text-[#053d27] font-semibold" : "text-gray-700"
+                    isActive
+                      ? "text-[#053d27] font-semibold"
+                      : "text-gray-700"
                   }`}
                 >
                   {item.name}
                 </Link>
+
               );
+
             })}
-          </nav>
+        </nav>
 
           {/* Mobile Button at the Bottom */}
-          <div className="mt-auto">
+          <div className="pt-8 mt-auto">
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
