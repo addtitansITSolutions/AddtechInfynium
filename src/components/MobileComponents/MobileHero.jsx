@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const AffiliateHero = () => {
+const MobileHero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#053d27] via-[#0b5a3d] to-[#053d27] pt-36 pb-20">
 
@@ -24,19 +24,21 @@ const AffiliateHero = () => {
           >
 
             <span className="inline-flex items-center rounded-full bg-white/10 border border-white/20 px-5 py-2 text-sm text-white tracking-wide">
-              Affiliate Marketing
+              Mobile App Development
             </span>
 
             <h1 className="mt-8 text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Grow Your Business With
+              Build Mobile Apps
               <span className="block text-[#9be3c5]">
-                High-Performing Affiliate Marketing
+                That Drive Business Growth
               </span>
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-gray-200 max-w-xl">
-                Every affiliate program has a unique goal. So, we build customized performance ecosystems that allow
-                brands to reach their goals with measurable results. 
+              From concept to launch, we build intuitive, scalable, and
+              high-performance mobile applications that deliver seamless user
+              experiences and help businesses engage, retain, and grow their
+              customer base.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
@@ -45,25 +47,18 @@ const AffiliateHero = () => {
                 to="/contact"
                 className="inline-flex items-center gap-2 bg-white text-[#053d27] px-8 py-4 rounded-full font-semibold hover:scale-105 transition"
               >
-                Get Started
+                Build Your App
                 <ArrowRight size={18} />
               </Link>
-
-              {/* <Link
-                to="/portfolio"
-                className="inline-flex items-center rounded-full border border-white/30 px-8 py-4 text-white hover:bg-white hover:text-[#053d27] transition"
-              >
-                View Case Studies
-              </Link> */}
 
             </div>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-5">
 
               {[
-                "Performance Based",
-                "Trusted Publishers",
-                "High ROI Campaigns",
+                "Android & iOS",
+                "Cross-Platform Apps",
+                "Scalable Solutions",
               ].map((item) => (
 
                 <div
@@ -99,8 +94,8 @@ const AffiliateHero = () => {
             <div className="rounded-[32px] overflow-hidden shadow-2xl border border-white/10">
 
               <img
-                src="/affiliatemarketing/affiliatemarketing.png"
-                alt="Affiliate Marketing"
+                src="/Services/mobilehero.webp"
+                alt="Mobile App Development"
                 className="w-full h-[500px] object-cover"
               />
 
@@ -108,14 +103,14 @@ const AffiliateHero = () => {
 
             {/* Floating Card */}
 
-            <div className="absolute -bottom-10 -left-6 bg-white rounded-2xl shadow-xl px-6 py-5">
+            <div className="absolute -bottom-8 -left-6 bg-white rounded-2xl shadow-xl px-6 py-5">
 
               <h4 className="text-3xl font-bold text-[#053d27]">
-                +250%
+                100%
               </h4>
 
               <p className="text-gray-600 text-sm mt-1">
-                Average Campaign Growth
+                Custom Built Solutions
               </p>
 
             </div>
@@ -130,4 +125,4 @@ const AffiliateHero = () => {
   );
 };
 
-export default AffiliateHero;
+export default MobileHero;

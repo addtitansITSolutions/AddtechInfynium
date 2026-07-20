@@ -37,12 +37,16 @@ const services = [
 ];
 
 const industries = [
-  "Finance",
-  "Gaming",
-  "E-commerce",
-  "EdTech",
-  "Healthcare",
-  "Travel",
+  "Home Improvement",
+  "Insurance",
+  "Loan",
+  "Debt",
+  "Solar",
+  "Warranty",
+  "Health & Wellness",
+  "Sweepstakes",
+  "Nutra",
+  "E-Commerce",
 ];
 
 const AffiliateSolutions = () => {
@@ -144,7 +148,7 @@ const AffiliateSolutions = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: .6 }}
-            src="/services/affiliate.png"
+            src="/affiliatemarketing/affiliatesolutions.png"
             alt="Affiliate Marketing"
             className="rounded-[30px] w-full max-h-[420px] object-cover shadow-xl"
           />

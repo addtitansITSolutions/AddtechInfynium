@@ -61,10 +61,10 @@ const WhyDigitalMarketing = () => {
             </h2>
 
             <p className="mt-8 text-lg text-gray-600 leading-8">
-              A successful digital marketing strategy combines creativity,
-              technology and data to connect your business with the right
-              audience. We help brands improve visibility, generate quality
-              leads and convert visitors into loyal customers.
+              Many digital marketers get sold on impressions, reach and engagement – vanity metrics that ultimately
+              do not drive revenue. We build digital campaigns backwards from target CPA, so the budget spent is
+              accountable to a number you actually care about. We treat your budget as a portfolio to optimize, not
+              something to use and forget.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -104,11 +104,11 @@ const WhyDigitalMarketing = () => {
             transition={{ duration: .6 }}
           >
 
-            <img
-              src="/services/digital-growth.jpg"
+            {/* <img
+              src="/digitalmarketing/digitalmarketing.png"
               alt="Digital Growth"
               className="rounded-3xl h-[280px] w-full object-cover shadow-xl"
-            />
+            /> */}
 
             <div className="grid sm:grid-cols-2 gap-5 mt-6">
 

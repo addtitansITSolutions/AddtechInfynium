@@ -53,10 +53,10 @@ const EcommerceHero = () => {
 
             <p className="mt-8 text-lg leading-8 text-green-100 max-w-xl">
 
-              From attracting shoppers to increasing conversions,
-              we help ecommerce businesses scale faster through
-              data-driven marketing, optimized storefronts,
-              and high-performing campaigns.
+              Driving traffic to your page is only half the equation. What happens after someone clicks the link
+              determines whether they buy. We combine customer acquisition, on-site conversion, and retention to
+              turn visitors into loyal customers. The result? Higher conversions, better ROI, and an online presence
+              that brings the right customers to your business.
 
             </p>
 
@@ -75,14 +75,14 @@ const EcommerceHero = () => {
 
               </Link>
 
-              <Link
+              {/* <Link
                 to="/portfolio"
                 className="inline-flex items-center px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#053d27] transition"
               >
 
                 View Case Studies
 
-              </Link>
+              </Link> */}
 
             </div>
 
@@ -122,14 +122,14 @@ const EcommerceHero = () => {
           >
 
             <img
-              src="/services/ecommerce.png"
+              src="/ecommercemarketing/ecommercemarketing.png"
               alt="Ecommerce Marketing"
               className="w-full max-h-[560px] object-cover rounded-[36px] shadow-2xl"
             />
 
             {/* Orders */}
 
-            <div className="absolute top-8 -left-5 bg-white rounded-2xl shadow-xl p-5">
+            <div className="absolute top-8 -left-5 bg-white rounded-2xl shadow-xl p-5 hidden lg-flex">
 
               <div className="flex items-center gap-4">
 
@@ -160,9 +160,9 @@ const EcommerceHero = () => {
 
             {/* Revenue */}
 
-            <div className="absolute bottom-28 -right-5 bg-white rounded-2xl shadow-xl p-5">
+            <div className="absolute bottom-28 -right-5 bg-white rounded-2xl shadow-xl p-5 hidden lg:flex">
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 ">
 
                 <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
 
@@ -173,7 +173,7 @@ const EcommerceHero = () => {
 
                 </div>
 
-                <div>
+                <div className="">
 
                   <p className="text-sm text-gray-500">
                     Revenue Growth

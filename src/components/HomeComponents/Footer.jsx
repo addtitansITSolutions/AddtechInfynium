@@ -6,8 +6,10 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-[#053d27] text-white">
 
@@ -26,7 +28,7 @@ const Footer = () => {
             or transforming digitally, we're here to help.
           </p>
 
-          <button className="mt-10 bg-white text-[#053d27] px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto hover:scale-105 transition">
+          <button className="mt-10 bg-white text-[#053d27] px-8 py-4 rounded-full font-semibold flex items-center gap-2 mx-auto hover:scale-105 transition cursor-pointer" onClick={() => {navigate("/contact")}}>
 
             Get In Touch
 
@@ -103,7 +105,7 @@ const Footer = () => {
                 About
               </Link>
 
-              <Link to="/services" className="block">
+              <Link to="/services/affiliate-marketing" className="block">
                 Services
               </Link>
 
@@ -191,18 +193,18 @@ const Footer = () => {
 
           <p className="text-gray-400 text-sm">
 
-            © 2024 - 2026 Addtech Infinium. All Rights Reserved.
+            © 2022 - 2026 Addtech Infinium. All Rights Reserved.
 
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400">
 
-            <a href="#">
+            <a href="/privacy-policy">
               Privacy Policy
             </a>
 
-            <a href="#">
-              Terms & Conditions
+            <a href="/gdpr-compliance">
+              GDPR-Compliance
             </a>
 
           </div>

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import {
+   Store,
   ShoppingCart,
-  Store,
-  BarChart3,
   Target,
-  LineChart,
+  Repeat,
+  BarChart3,
   BadgeDollarSign,
   ArrowRight,
 } from "lucide-react";
@@ -13,45 +13,38 @@ import { Link } from "react-router-dom";
 const services = [
   {
     icon: Store,
-    title: "Marketplace Management",
+    title: "E-Commerce Strategy",
     description:
-      "Manage and optimize your products across Amazon, Flipkart and other marketplaces.",
-    stat: "+45% Sales",
+      "Strategies tailored to your business objectives, customer behaviour, and market opportunities.",
+    stat: "Growth Strategy",
   },
   {
     icon: ShoppingCart,
-    title: "Store Optimization",
+    title: "Customer Acquisition",
     description:
-      "Improve user experience, navigation and product pages to increase conversions.",
-    stat: "4.8% CVR",
+      "Reach high-intent shoppers through integrated performance marketing channels and creator partnerships.",
+    stat: "High Intent",
   },
   {
     icon: Target,
-    title: "Product Advertising",
+    title: "Store Optimization",
     description:
-      "Run high-converting Google Shopping and marketplace advertising campaigns.",
-    stat: "8.7x ROAS",
-  },
-  {
-    icon: LineChart,
-    title: "Conversion Optimization",
-    description:
-      "Reduce cart abandonment and maximize every visitor's purchase journey.",
-    stat: "+32% Orders",
+      "Enhance your online store with optimized product pages, checkout flow, and cart abandonment for an intuitive customer experience.",
+    stat: "Higher Conversions",
   },
   {
     icon: BadgeDollarSign,
-    title: "Revenue Growth",
+    title: "Customer Retention",
     description:
-      "Data-driven strategies focused on increasing average order value and repeat purchases.",
-    stat: "+210% Revenue",
+      "Create personalized engagement with remarketing strategies and initiatives that encourage repeat purchases.",
+    stat: "Repeat Sales",
   },
   {
     icon: BarChart3,
-    title: "Analytics & Reporting",
+    title: "Performance Analytics",
     description:
-      "Track sales, customer behavior and campaign performance with transparent reports.",
-    stat: "Live Dashboard",
+      "Monitor e-commerce health via tangible metrics and continuous optimization for long-term value and growth.",
+    stat: "Actionable Insights",
   },
 ];
 
@@ -81,9 +74,8 @@ const EcommerceSolutions = () => {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            From marketplace management to conversion optimization,
-            our ecommerce marketing solutions are designed to increase
-            sales, improve customer experience and maximize profitability.
+            Instead of a generic traffic report, we manage everything from acquisition to repeat purchase, so that
+            revenue per customer is the number that goes up.
           </p>
 
         </motion.div>

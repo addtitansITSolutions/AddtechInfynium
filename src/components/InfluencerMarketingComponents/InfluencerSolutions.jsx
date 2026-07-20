@@ -75,9 +75,8 @@ const InfluencerSolutions = () => {
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 leading-8">
-            From identifying the right creators to optimizing campaign
-            performance, we deliver end-to-end influencer marketing
-            strategies that build trust and drive measurable growth.
+            We don’t sell influencer marketing as brand awareness with an appealing case study. Every creator
+            partnership is judged on the same standard as every other channel we run
           </p>
 
         </motion.div>
@@ -176,9 +175,9 @@ const InfluencerSolutions = () => {
             <div className="hidden lg:flex justify-center">
 
               <img
-                src="/services/influencer-cta.png"
+                src="/influencermarketing/cta.png"
                 alt="Influencer Campaign"
-                className="w-[420px] h-[320px] object-contain"
+                className="w-[420px] h-[420px] object-cover rounded-[32px] shadow-2xl"
               />
 
             </div>

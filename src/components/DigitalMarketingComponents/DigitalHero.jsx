@@ -28,17 +28,20 @@ const DigitalHero = () => {
             </span>
 
             <h1 className="mt-8 text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Grow Your Brand
+              Shifting Digital Landscape.
               <span className="block text-[#9be3c5]">
-                Across Every Digital Channel
+                Evolving Business Priorities.
               </span>
             </h1>
 
-            <p className="mt-8 text-lg leading-8 text-gray-200 max-w-xl">
-              Build a powerful online presence with data-driven digital
-              marketing strategies. From SEO and social media to paid
-              advertising and content marketing, we help businesses reach,
-              engage, and convert the right audience.
+            <p className="mt-8 text-xl leading-8 text-gray-200 max-w-xl">
+              Businesses cannot rely on standardized campaign structures or fixed content templates if they are to
+              thrive in such a market. 
+            </p>
+            <p className=" text-sm leading-8 text-gray-200 max-w-xl">
+              At Addtitans, we make sure campaigns are limited to impressions or clicks. We formulate strategies
+              that aren’t unique for the sake of it. Every campaign is designed to attract the right audience and
+              deliver measurable business outcomes.
             </p>
 
             <div className="flex flex-wrap gap-5 mt-10">
@@ -51,19 +54,19 @@ const DigitalHero = () => {
                 <ArrowRight size={18} />
               </Link>
 
-              <Link
+              {/* <Link
                 to="/portfolio"
                 className="inline-flex items-center px-8 py-4 rounded-full border border-white/30 text-white hover:bg-white hover:text-[#053d27] transition"
               >
                 View Portfolio
-              </Link>
+              </Link> */}
 
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4 mt-12">
 
               {[
-                "SEO & Organic Growth",
+                "SEO & Content Marketing",
                 "Social Media Marketing",
                 "Paid Advertising",
                 "Analytics & Reporting",
@@ -100,7 +103,7 @@ const DigitalHero = () => {
           >
 
             <img
-              src="/services/digital-marketing.png"
+              src="/digitalmarketing/digitalmarketing.png"
               alt="Digital Marketing"
               className="rounded-[30px] w-full h-[520px] object-cover shadow-2xl"
             />

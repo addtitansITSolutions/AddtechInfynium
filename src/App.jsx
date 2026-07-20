@@ -12,6 +12,10 @@ import DigitalMarketing from './pages/DigitalMarketing'
 import SEO from './pages/SEO'
 import InfluencerMarketing from './pages/InfluencerMarketing'
 import EcommerceMarketing from './pages/EcommerceMarketing'
+import MobileMarketing from './pages/MobileMarketing'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import GDPRCompliance from './pages/GDPRCompliance'
+import ContactForm from './pages/ContactForm'
 
 
 
@@ -31,6 +35,10 @@ const App = () => {
           <Route path="/services/seo" element={<SEO />} />
           <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} />
           <Route path="/services/ecommerce-marketing" element={<EcommerceMarketing />} />
+          <Route path="/services/mobile-services" element={<MobileMarketing />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/gdpr-compliance' element={<GDPRCompliance />} />
+          <Route path='/contact' element={<ContactForm />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         {/* <Partners /> */}

@@ -42,7 +42,7 @@ const Hero = () => {
 
             <div className="mt-10 flex flex-wrap gap-5">
 
-              <button className="bg-[#053d27] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/services/performance-marketing')}>
+              <button className="bg-[#053d27] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/contact')}>
                 Build Your Growth
                 <ArrowRight size={20} />
               </button>

@@ -10,33 +10,33 @@ import {
 const steps = [
   {
     icon: Search,
-    title: "Creator Discovery",
+    title: "Creator Sourcing and Vetting",
     description:
-      "We identify influencers whose audience, niche and values perfectly align with your brand.",
+      "Identify creators whose audience, values, and content align with your brand.",
   },
   {
     icon: Users,
-    title: "Campaign Planning",
+    title: "Campaign Strategy",
     description:
-      "Our team creates a customized influencer strategy with clear goals, timelines and deliverables.",
-  },
-  {
-    icon: Camera,
-    title: "Content Collaboration",
-    description:
-      "Creators produce authentic content that naturally connects with their followers while promoting your brand.",
+      "Tailored campaign strategies that align with your marketing objectives and business goals.",
   },
   {
     icon: BarChart3,
-    title: "Performance Tracking",
+    title: "Attribution Tracking",
     description:
-      "Monitor engagement, reach, conversions and campaign performance through real-time analytics.",
+      "Monitor campaign performance through links, codes, and pixels to ensure results align with business goals.",
+  },
+  {
+    icon: Camera,
+    title: "Content-to-Commerce Integration",
+    description:
+      "Creator content plugged directly into your e-commerce funnel.",
   },
   {
     icon: CheckCircle2,
-    title: "Optimization & Growth",
+    title: "ROI Reporting",
     description:
-      "We optimize every campaign using data insights to maximize ROI and build long-term partnerships.",
+      "Monitor partnership performance to understand what's generating revenue and refine accordingly.",
   },
 ];
 
@@ -130,11 +130,17 @@ const WhyInfluencer = () => {
 
                   {/* Center Circle */}
 
-                  <div className="hidden lg:flex justify-center">
+                  <div className="hidden lg:flex justify-center items-center">
 
-                    <div className="w-6 h-6 rounded-full bg-[#053d27] border-4 border-white shadow-lg"></div>
+                  <div className="w-20 h-20 rounded-full bg-white shadow-lg border border-[#053d27]/15 flex items-center justify-center">
+
+                    <span className="text-3xl font-bold text-[#053d27]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
 
                   </div>
+
+                </div>
 
                 </motion.div>
 

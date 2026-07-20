@@ -38,28 +38,22 @@ const InfluencerHero = () => {
 
             </span>
 
-            <h1 className="mt-8 text-5xl lg:text-6xl font-bold leading-tight text-white">
-
-              Turn Creators
-              <br />
-
-              Into Powerful
-              <br />
-
+            <h1 className="mt-8 text-3xl lg:text-6xl font-bold leading-tight text-white">
+              Turn Creators Into Powerful &nbsp;
               <span className="text-green-300">
-
                 Brand Ambassadors.
-
               </span>
 
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-green-100 max-w-xl">
 
-              Build authentic partnerships with influencers who connect
-              with your audience. From creator discovery to campaign
-              management, we help brands increase awareness,
-              engagement and conversions.
+              One of the biggest challenges in modern influencer marketing is the over-reliance on engagement
+              metrics. Reach and engagement are easy to report, but that’s not what actually matters. Partnering
+              with the right creators inspires trust, drives purchase decisions, and contributes to business growth.
+              We match the right creators suited to your category, then track conversions and revenue against our
+              established standard.
+
 
             </p>
 
@@ -78,14 +72,14 @@ const InfluencerHero = () => {
 
               </Link>
 
-              <Link
+              {/* <Link
                 to="/portfolio"
                 className="inline-flex items-center px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-[#053d27] transition"
               >
 
                 View Portfolio
 
-              </Link>
+              </Link> */}
 
             </div>
 
@@ -125,7 +119,7 @@ const InfluencerHero = () => {
           >
 
             <img
-              src="/services/influencer.png"
+              src="/influencermarketing/influencermarketing.png"
               alt="Influencer Marketing"
               className="w-full max-h-[560px] object-cover rounded-[36px] shadow-2xl"
             />

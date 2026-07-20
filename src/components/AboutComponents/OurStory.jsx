@@ -5,26 +5,26 @@ const stats = [
   {
     id: 1,
     icon: Briefcase,
-    number: "150+",
-    title: "Projects Delivered",
+    number: "01",
+    title: "Strategy before Execution",
+    description:
+      "Every campaign begins with a clear roadmap covering your business, audience, and objectives.",
   },
   {
     id: 2,
-    icon: Users,
-    number: "80+",
-    title: "Happy Clients",
+    icon: Rocket,
+    number: "02",
+    title: "Integrated Operation Structure",
+    description:
+      "Affiliate Marketing, Digital Marketing, Influencer Marketing, and e-Commerce are managed as one integrated growth system.",
   },
   {
     id: 3,
-    icon: Rocket,
-    number: "6+",
-    title: "Digital Services",
-  },
-  {
-    id: 4,
-    icon: Award,
-    number: "98%",
-    title: "Client Satisfaction",
+    icon: Users,
+    number: "03",
+    title: "Partnership Beyond Campaigns",
+    description:
+      "We operate as an extension of your team with expertise, transparency, and continuous optimization for sustainable growth.",
   },
 ];
 
@@ -46,95 +46,70 @@ const OurStory = () => {
           >
 
             <span className="uppercase tracking-[4px] text-[#053d27] font-semibold">
-
-              Our Story
-
+  What Makes Us Different
             </span>
 
             <h2 className="text-5xl font-bold mt-5 leading-tight">
-
-              Empowering Businesses
+              Strategy That Drives
               <br />
-
-              Through Innovation.
-
+              Sustainable Growth.
             </h2>
 
             <p className="mt-8 text-lg leading-8 text-gray-600">
-
-              Addtech Infinium was founded with a simple vision —
-              helping businesses leverage technology to achieve
-              sustainable growth. Over the years, we've partnered
-              with startups, enterprises, and growing brands to
-              build powerful digital experiences that generate
-              real business impact.
-
+              At Addtech Infinium, we believe great marketing starts with
+              strategy—not execution alone. Every campaign is built around
+              your business goals, audience, and measurable outcomes to
+              create long-term value.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-
-              From digital marketing and affiliate solutions to
-              custom software and e-commerce platforms, our team
-              combines creativity with technology to deliver
-              measurable results for every client.
-
+              By integrating Affiliate Marketing, Digital Marketing,
+              Influencer Marketing, and e-Commerce into one connected
+              growth system, we become an extension of your team, focused
+              on transparency, optimization, and measurable business
+              results.
             </p>
 
           </motion.div>
 
           {/* RIGHT */}
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6 items-stretch">
-
+          <div className="flex flex-wrap justify-center gap-6">
             {stats.map((item, index) => {
-
               const Icon = item.icon;
 
               return (
-
                 <motion.div
                   key={item.id}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
-                    duration: .5,
-                    delay: index * .15,
+                    duration: 0.5,
+                    delay: index * 0.15,
                   }}
                   whileHover={{
                     y: -8,
                     scale: 1.03,
                   }}
-                  className="bg-white rounded-[24px] lg:rounded-[30px] p-5 lg:p-8 shadow-lg border border-gray-100 h-full flex flex-col"
+                  className="bg-white rounded-[30px] p-6 shadow-lg border border-gray-100
+                            w-[calc(100%-12px)] md:w-[calc(50%-12px)] min-w-[250px] md:max-w-[290px]
+                            min-h-[320px] flex flex-col"
                 >
-
-                  <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-xl lg:rounded-2xl bg-[#053d27]/10 flex items-center justify-center">
-
-                    <Icon
-                        size={22}
-                        className="lg:w-8 lg:h-8 text-[#053d27]"
-                    />
-
+                  <div className="w-16 h-16 rounded-2xl bg-[#053d27]/10 flex items-center justify-center">
+                    <Icon size={30} className="text-[#053d27]" />
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4 lg:mt-8">
-
-                    {item.number}
-
+                  <h3 className="text-2xl font-bold mt-8">
+                    {item.title}
                   </h3>
 
-                  <p className="text-sm lg:text-base text-gray-600 mt-2 lg:mt-3 leading-6 lg:leading-7">
-
-                    {item.title}
-
+                  <p className="text-gray-600 mt-5 leading-7 flex-1">
+                    {item.description}
                   </p>
-
                 </motion.div>
-
               );
-
             })}
-
           </div>
 
         </div>

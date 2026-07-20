@@ -2,12 +2,36 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "Performance-based marketing with measurable ROI",
-  "Expand your reach through trusted affiliate partners",
-  "Only pay for successful conversions and sales",
-  "Real-time campaign tracking and analytics",
-  "Scalable strategies tailored to your business goals",
-  "Continuous optimization for maximum revenue growth",
+  {
+    title: "Affiliate Program Strategy",
+    description:
+      "Tailored frameworks built around measurable growth.",
+  },
+  {
+    title: "Publisher Partnerships",
+    description:
+      "Quality affiliates aligned with your audience and objectives.",
+  },
+  {
+    title: "Commission Optimization",
+    description:
+      "Motivate top-performing affiliates while maintaining profitability.",
+  },
+  {
+    title: "Program Operations",
+    description:
+      "End-to-end management of affiliate relationships and campaigns.",
+  },
+  {
+    title: "Real-Time Analytics",
+    description:
+      "Clear performance tracking backed by reliable data.",
+  },
+  {
+    title: "Fraud Prevention",
+    description:
+      "Quality compliance and program integrity.",
+  },
 ];
 
 const WhyAffiliateMarketing = () => {
@@ -29,7 +53,7 @@ const WhyAffiliateMarketing = () => {
           >
 
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200"
+              src="/affiliatemarketing/whyaffiliate.png"
               alt="Affiliate Marketing Strategy"
               className="rounded-[30px] w-full h-[550px] object-cover shadow-xl"
             />
@@ -63,39 +87,41 @@ const WhyAffiliateMarketing = () => {
               Why Affiliate Marketing
             </span>
 
-            <h2 className="text-4xl lg:text-5xl font-bold mt-5 leading-tight">
+            <h3 className="text-2xl lg:text-3xl font-bold mt-5 leading-tight">
               Build Long-Term Growth Through Smart Partnerships
-            </h2>
+            </h3>
 
-            <p className="mt-7 text-lg text-gray-600 leading-8">
+            {/* <p className="mt-7 text-lg text-gray-600 leading-8">
               Affiliate marketing is one of the most effective digital
               strategies for generating qualified leads and increasing
               sales. By partnering with trusted publishers and creators,
               your brand reaches new audiences while paying only for
               measurable results.
-            </p>
+            </p> */}
 
             <div className="grid sm:grid-cols-2 gap-5 mt-10">
 
               {benefits.map((item) => (
-
                 <motion.div
-                  key={item}
+                  key={item.title}
                   whileHover={{ y: -5 }}
-                  className="flex gap-3 p-5 rounded-2xl bg-[#f7fbf9] border border-gray-100"
+                  className="flex gap-4 p-5 rounded-2xl bg-[#f7fbf9] border border-gray-100"
                 >
-
                   <CheckCircle2
                     size={22}
                     className="text-[#053d27] flex-shrink-0 mt-1"
                   />
 
-                  <p className="text-gray-700 leading-7">
-                    {item}
-                  </p>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[#053d27]">
+                      {item.title}
+                    </h3>
 
+                    <p className="mt-2 text-gray-600 leading-7">
+                      {item.description}
+                    </p>
+                  </div>
                 </motion.div>
-
               ))}
 
             </div>

@@ -58,10 +58,18 @@ const navLinks = [
           },
         ],
       },
+
+      {
+        title: "Mobile",
+        items: [
+          {
+            name: "Mobile Services",
+            path: "/services/mobile-services",
+          },
+        ],
+      },
     ],
   },
-
-  { name: "Portfolio", path: "/portfolio" },
 
   { name: "Contact", path: "/contact" },
 ];

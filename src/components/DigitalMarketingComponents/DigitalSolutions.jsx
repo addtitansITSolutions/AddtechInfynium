@@ -4,48 +4,48 @@ import {
   Share2,
   MousePointerClick,
   PenTool,
-  Mail,
   BarChart3,
-  ArrowRight,
+  TrendingUp,
+  ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Search,
-    title: "SEO Services",
+    title: "Paid Search Advertising",
     description:
-      "Improve your search rankings and drive high-quality organic traffic.",
+      "Capture high-intent customers through targeted search campaigns.",
   },
   {
     icon: Share2,
-    title: "Social Media Marketing",
+    title: "Paid Advertising",
     description:
-      "Build meaningful customer relationships across major social platforms.",
+      "Engage the right audience with performance-driven social campaigns.",
   },
   {
     icon: MousePointerClick,
-    title: "Paid Advertising",
+    title: "Search Engine Optimization",
     description:
-      "Generate qualified leads with Google Ads and Meta Ads campaigns.",
+      "Increase visibility with conversion-driven content and technical SEO.",
   },
   {
     icon: PenTool,
-    title: "Content Marketing",
+    title: "Conversion Optimization",
     description:
-      "Create engaging content that strengthens your brand authority.",
-  },
-  {
-    icon: Mail,
-    title: "Email Marketing",
-    description:
-      "Convert prospects into loyal customers through personalized campaigns.",
+      "Enhance landing pages and user journeys to turn more visitors into customers.",
   },
   {
     icon: BarChart3,
-    title: "Analytics & Reporting",
+    title: "Performance Analytics",
     description:
-      "Track campaign performance with transparent reporting and insights.",
+      "Get clear insights with transparent reporting and actionable data.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Campaign Optimization",
+    description:
+      "Continuously improve performance through testing and strategic budget allocation.",
   },
 ];
 

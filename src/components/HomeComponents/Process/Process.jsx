@@ -45,7 +45,7 @@ const Process = () => {
           {/* TOP SIDE: Heading Area (only on MOBILE & TABLET }) */}
           <div className="lg:sticky lg:hidden lg:top-32 h-fit">
             <span className="uppercase tracking-[4px] font-semibold text-[#053d27] text-sm lg:text-base">
-              Our Process
+              How We Operate
             </span>
 
             <h2 className="mt-4 lg:mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
@@ -252,7 +252,7 @@ const Process = () => {
           {/* RIGHT SIDE: Heading Area (Only on Desktop) */}
           <div className="hidden lg:block lg:sticky lg:top-32 h-fit">
             <span className="uppercase tracking-[4px] font-semibold text-[#053d27] text-sm lg:text-base">
-              Our Process
+             How We Operate
             </span>
 
             <h2 className="mt-4 lg:mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
