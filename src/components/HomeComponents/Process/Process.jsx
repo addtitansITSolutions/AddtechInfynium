@@ -5,12 +5,15 @@ import { ArrowRight, Check } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Process = () => {
   const [activeStep, setActiveStep] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const items = document.querySelectorAll(".process-item");
@@ -164,10 +167,10 @@ const Process = () => {
                             </AnimatePresence>
                           </div>
 
-                          <button className="mt-6 flex items-center gap-2 text-[#053d27] font-semibold text-sm">
+                          {/* <button className="mt-6 flex items-center gap-2 text-[#053d27] font-semibold text-sm">
                             Learn More
                             <ArrowRight size={18} />
-                          </button>
+                          </button> */}
                         </div>
 
                         {/* Card Graphic Column */}
@@ -222,10 +225,10 @@ const Process = () => {
                             {step.description}
                           </p>
 
-                          <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm">
+                          {/* <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm">
                             Learn More
                             <ArrowRight size={16} />
-                          </button>
+                          </button> */}
                         </div>
 
                         {/* Visual graphic side */}
@@ -264,7 +267,7 @@ const Process = () => {
               transform your ideas into scalable business solutions.
             </p>
 
-            <button className="mt-8 lg:mt-10 bg-[#053d27] text-white rounded-full px-8 py-4 flex items-center gap-3 hover:scale-105 transition w-full sm:w-auto justify-center">
+            <button className="mt-8 lg:mt-10 bg-[#053d27] text-white rounded-full px-8 py-4 flex items-center gap-3 hover:scale-105 transition w-full sm:w-auto justify-center cursor-pointer" onClick={() => navigate('/contact')}>
               Start Your Project
               <ArrowRight size={18} />
             </button>

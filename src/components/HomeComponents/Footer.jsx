@@ -56,10 +56,10 @@ const Footer = () => {
 
             <p className="mt-6 text-gray-300 leading-8">
 
-              Delivering innovative digital solutions,
-              software development, marketing and
-              technology services that help businesses
-              grow confidently.
+              Addtech Infinium Private Limited is a leading performance marketing company with a strong footing
+              across Southeast Asia and the Middle East. We offer an umbrella of marketing solutions, including
+              affiliate, digital, influencer, and e-commerce.
+
 
             </p>
 
@@ -127,13 +127,26 @@ const Footer = () => {
 
             <div className="space-y-4 text-gray-300">
 
-              <p>Affiliate Marketing</p>
+              <Link to="/services/affiliate-marketing" className="block">
+                Affiliate Marketing
+              </Link>
 
-              <p>Digital Marketing</p>
+              <Link to="/services/digital-marketing" className="block">
+                Digital Marketing
+              </Link>
 
-              <p>Influencer Marketing</p>
 
-              <p>E-Commerce Solutions</p>
+              <Link to="/services/performance-marketing" className="block">
+                Performance Marketing
+              </Link>
+              
+              <Link to="/services/influencer-marketing" className="block">
+                Influencer Marketing
+              </Link>
+
+              <Link to="/services/ecommerce-marketing" className="block">
+                E-Commerce Solutions
+              </Link>
 
             </div>
 
@@ -156,8 +169,10 @@ const Footer = () => {
               <p>📞 +91-8447286658</p>
 
               <p>
-                📍 New Delhi,
-                India
+                 <h2>📍 HQ Address</h2>
+                <p>
+                  35-B-88 EPDP Colony, Chitranjan Park, Chitranjan Park, New Delhi, South Delhi- 110019, Delhi
+                </p>
               </p>
 
             </div>
@@ -176,7 +191,7 @@ const Footer = () => {
 
           <p className="text-gray-400 text-sm">
 
-            © 2026 Addtech Infinium. All Rights Reserved.
+            © 2024 - 2026 Addtech Infinium. All Rights Reserved.
 
           </p>
 

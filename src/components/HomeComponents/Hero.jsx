@@ -1,9 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import animationtop from "../../assets/animationtop.gif";
-import Lottie from "lottie-react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative overflow-hidden bg-white pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -19,31 +22,34 @@ const Hero = () => {
           >
 
             <span className="inline-flex items-center rounded-full bg-[#053d27]/10 text-[#053d27] px-4 py-2 text-sm font-semibold mb-6">
-              Transforming Ideas Into Digital Excellence
+              Marketing Built Around Scalable Outcomes
             </span>
 
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-gray-900">
-              Building
-              <span className="text-[#053d27]"> Innovative </span>
-              Software Solutions
+              Marketing Built for
+              <span className="text-[#053d27]"> Scalable Outcomes </span>
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-gray-600 max-w-xl">
-              We help startups and enterprises build scalable web platforms,
-              mobile applications, AI-powered solutions, cloud infrastructure,
-              and custom software that accelerate business growth.
+              At Addtech Infinium, great marketing doesn't just build awareness—it
+              drives measurable results. We deliver performance-led solutions in
+              performance marketing, digital marketing, influencer marketing, and
+              e-Commerce, helping brands reach their target audience, optimize
+              every touchpoint, and grow with confidence. From generating
+              impressions to creating visible business impact, Addtech Infinium
+              handholds your growth every step of the way.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
 
-              <button className="bg-[#053d27] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 flex items-center gap-2">
-                Start Your Project
+              <button className="bg-[#053d27] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/services/performance-marketing')}>
+                Build Your Growth
                 <ArrowRight size={20} />
               </button>
 
-              <button className="border border-[#053d27] text-[#053d27] px-8 py-4 rounded-full font-semibold hover:bg-[#053d27] hover:text-white transition duration-300">
+              {/* <button className="border border-[#053d27] text-[#053d27] px-8 py-4 rounded-full font-semibold hover:bg-[#053d27] hover:text-white transition duration-300">
                 Explore Services
-              </button>
+              </button> */}
 
             </div>
 
@@ -51,17 +57,17 @@ const Hero = () => {
 
               <div>
                 <h2 className="text-3xl font-bold text-[#053d27]">100+</h2>
-                <p className="text-gray-600 mt-1">Projects Delivered</p>
+                <p className="text-gray-600 mt-1">Successful Campaigns</p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-bold text-[#053d27]">50+</h2>
-                <p className="text-gray-600 mt-1">Happy Clients</p>
+                <p className="text-gray-600 mt-1">Growing Brands</p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-bold text-[#053d27]">5+</h2>
-                <p className="text-gray-600 mt-1">Years Experience</p>
+                <p className="text-gray-600 mt-1">Marketing Expertise</p>
               </div>
 
             </div>
@@ -79,7 +85,7 @@ const Hero = () => {
 
             <img
               src={animationtop}
-              alt="Software Development"
+              alt="Digital Marketing"
               className="w-full max-w-xl"
             />
 

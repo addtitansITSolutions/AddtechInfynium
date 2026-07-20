@@ -4,12 +4,16 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import react from "react";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Services = () => {
   const [active, setActive] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const cards = document.querySelectorAll(".service-card");
@@ -44,11 +48,11 @@ const Services = () => {
           <div className="lg:sticky lg:top-32 h-fit">
 
             <span className="text-[#fff] font-semibold uppercase tracking-[4px]">
-              Our Services
+              Our Portfolio
             </span>
 
             <h2 className="text-5xl font-bold mt-5 leading-tight text-[#fff]">
-              We Build Digital Experiences That Grow Businesses.
+             One Performance Engine, Four Channels
             </h2>
 
             <p className="text-gray-400 mt-8 text-lg leading-8">
@@ -63,7 +67,7 @@ const Services = () => {
               Scroll to discover our expertise.
             </p>
 
-            <button className="mt-10 flex items-center gap-2 bg-[#fff] text-[#053D27] px-8 py-4 rounded-full hover:scale-105 transition">
+            <button className="mt-10 flex items-center gap-2 bg-[#fff] text-[#053D27] px-8 py-4 rounded-full hover:scale-105 transition" onClick={() => navigate('/contact')}>
               Let's Talk
               <ArrowRight size={18} />
             </button>
@@ -111,7 +115,7 @@ const Services = () => {
                         {service.description}
                       </p>
 
-                      <button className="mt-8 flex items-center gap-2 text-[#053d27] font-semibold">
+                      <button className="mt-8 flex items-center gap-2 text-[#053d27] font-semibold" onClick={() => navigate(service.navigate)}>
                         Learn More
                         <ArrowRight size={18}/>
                       </button>
@@ -176,7 +180,7 @@ const Services = () => {
                               {service.description}
                             </p>
 
-                            <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm">
+                            <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm" onClick={() => navigate(service.navigate)}>
                               Learn More
                               <ArrowRight size={16} />
                             </button>
