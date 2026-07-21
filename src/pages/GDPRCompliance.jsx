@@ -1,7 +1,65 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+
 
 const GDPRCompliance = () => {
   return (
+   <>
+    <Helmet>
+      {/* SEO */}
+      <title>
+        GDPR Compliance | Addtech Infinium
+      </title>
+
+      <meta
+        name="description"
+        content="Learn how Addtech Infinium complies with the General Data Protection Regulation (GDPR), including data processing, user rights, security measures, and international data transfers."
+      />
+
+      <link
+        rel="canonical"
+        href="https://addtechinfinium.com/gdpr-compliance"
+      />
+
+      {/* Open Graph */}
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="GDPR Compliance | Addtech Infinium"
+      />
+      <meta
+        property="og:description"
+        content="Learn how Addtech Infinium complies with the General Data Protection Regulation (GDPR), including data processing, user rights, security measures, and international data transfers."
+      />
+      <meta
+        property="og:url"
+        content="https://addtechinfinium.com/gdpr-compliance"
+      />
+      <meta
+        property="og:image"
+        content="https://addtechinfinium.com/og-image.jpg"
+      />
+      <meta property="og:site_name" content="Addtech Infinium" />
+      <meta property="og:locale" content="en_US" />
+
+      {/* Twitter */}
+      <meta
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        name="twitter:title"
+        content="GDPR Compliance | Addtech Infinium"
+      />
+      <meta
+        name="twitter:description"
+        content="Learn how Addtech Infinium complies with the General Data Protection Regulation (GDPR), including data processing, user rights, security measures, and international data transfers."
+      />
+      <meta
+        name="twitter:image"
+        content="https://addtechinfinium.com/og-image.jpg"
+      />
+    </Helmet>
     <section className="pt-36 pb-24 bg-[#f8fbfa]">
       <div className="max-w-5xl mx-auto px-6">
 
@@ -274,6 +332,7 @@ const GDPRCompliance = () => {
 
       </div>
     </section>
+   </>
   );
 };
 

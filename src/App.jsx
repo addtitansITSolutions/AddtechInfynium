@@ -35,7 +35,7 @@ const App = () => {
           {/* <Route path="/services/seo" element={<SEO />} /> */}
           {/* <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} /> */}
           <Route path="/services/ecommerce-marketing" element={<EcommerceMarketing />} />
-          <Route path="/services/mobile-services" element={<MobileMarketing />} />
+          <Route path="/services/mobile-marketing" element={<MobileMarketing />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/gdpr-compliance' element={<GDPRCompliance />} />
           <Route path='/contact' element={<ContactForm />} />

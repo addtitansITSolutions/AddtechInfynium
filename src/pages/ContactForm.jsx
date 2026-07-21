@@ -5,6 +5,7 @@ import {
   MapPin,
   CheckCircle,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const ContactForm = () => {
   const [form, setForm] = useState({
@@ -51,6 +52,61 @@ ${form.message}
 
   return (
     <section className="pt-36 pb-24 bg-[#f8fbfa]">
+      <Helmet>
+        {/* SEO */}
+        <title>
+          Contact Us | Addtech Infinium
+        </title>
+
+        <meta
+          name="description"
+          content="Get in touch with Addtech Infinium to discuss affiliate marketing, digital marketing, influencer marketing, e-commerce, performance marketing, SEO, and mobile marketing solutions."
+        />
+
+        <link
+          rel="canonical"
+          href="https://addtechinfinium.com/contact"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Contact Us | Addtech Infinium"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Addtech Infinium to discuss affiliate marketing, digital marketing, influencer marketing, e-commerce, performance marketing, SEO, and mobile marketing solutions."
+        />
+        <meta
+          property="og:url"
+          content="https://addtechinfinium.com/contact"
+        />
+        <meta
+          property="og:image"
+          content="https://addtechinfinium.com/og-image.jpg"
+        />
+        <meta property="og:site_name" content="Addtech Infinium" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+        <meta
+          name="twitter:title"
+          content="Contact Us | Addtech Infinium"
+        />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Addtech Infinium to discuss affiliate marketing, digital marketing, influencer marketing, e-commerce, performance marketing, SEO, and mobile marketing solutions."
+        />
+        <meta
+          name="twitter:image"
+          content="https://addtechinfinium.com/og-image.jpg"
+        />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">

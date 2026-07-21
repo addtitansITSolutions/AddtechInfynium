@@ -64,7 +64,7 @@ const navLinks = [
         items: [
           {
             name: "Mobile Services",
-            path: "/services/mobile-services",
+            path: "/services/mobile-marketing",
           },
         ],
       },
