@@ -32,8 +32,8 @@ const App = () => {
           <Route path="/services/affiliate-marketing" element={<AffiliateMarketing />} />
           <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-          <Route path="/services/seo" element={<SEO />} />
-          <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} />
+          {/* <Route path="/services/seo" element={<SEO />} /> */}
+          {/* <Route path="/services/influencer-marketing" element={<InfluencerMarketing />} /> */}
           <Route path="/services/ecommerce-marketing" element={<EcommerceMarketing />} />
           <Route path="/services/mobile-services" element={<MobileMarketing />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />

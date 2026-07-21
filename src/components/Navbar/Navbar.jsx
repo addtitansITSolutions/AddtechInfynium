@@ -32,22 +32,22 @@ const navLinks = [
             name: "Digital Marketing",
             path: "/services/digital-marketing",
           },
-          {
-            name: "SEO",
-            path: "/services/seo",
-          },
+          // {
+          //   name: "SEO",
+          //   path: "/services/seo",
+          // },
         ],
       },
 
-      {
-        title: "Influencer Marketing",
-        items: [
-          {
-            name: "Influencer Marketing",
-            path: "/services/influencer-marketing",
-          },
-        ],
-      },
+      // {
+      //   title: "Influencer Marketing",
+      //   items: [
+      //     {
+      //       name: "Influencer Marketing",
+      //       path: "/services/influencer-marketing",
+      //     },
+      //   ],
+      // },
 
       {
         title: "Ecommerce",

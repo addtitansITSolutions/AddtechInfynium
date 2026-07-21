@@ -87,7 +87,7 @@ const Hero = () => {
             <img
               src={animationtop}
               alt="Digital Marketing"
-              className="w-full max-w-xl rounded-2xl"
+              className="w-full max-w-xl "
             />
 
           </motion.div>
