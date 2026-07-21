@@ -168,33 +168,33 @@ const Services = () => {
 
                           <div className="p-5 flex flex-col justify-center">
 
-                            <span className="text-[#053d27] text-xs font-semibold">
+                            <span className="text-[#053d27] text-xs font-semibold sm:text-6xl">
                               0{service.id}
                             </span>
 
-                            <h3 className="text-lg font-bold mt-2 leading-snug">
+                            <h3 className="text-lg font-bold mt-2 leading-snug sm:text-5xl">
                               {service.title}
                             </h3>
 
-                            <p className="text-gray-600 text-sm leading-6 mt-3 line-clamp-3">
+                            <p className="text-gray-600 text-sm leading-6 mt-3 line-clamp-3 sm:text-2xl sm:line-clamp-6">
                               {service.description}
                             </p>
 
-                            <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm" onClick={() => navigate(service.navigate)}>
+                            <button className="mt-5 flex items-center gap-2 text-[#053d27] font-semibold text-sm sm:text-4xl" onClick={() => navigate(service.navigate)}>
                               Learn More
-                              <ArrowRight size={16} />
+                              <ArrowRight size={24} />
                             </button>
 
                           </div>
 
                           {/* Right Image */}
 
-                          <div className="bg-[#edf7f2] flex items-center justify-center p-4">
+                          <div className="bg-[#edf7f2] w-full h-full flex items-center justify-center">
 
                             <img
                               src={service.image}
                               alt={service.title}
-                              className="w-28 sm:w-32 object-contain"
+                              className="w-full sm:w-full object-cover"
                             />
 
                           </div>

@@ -30,8 +30,8 @@ export const processSteps = [
     title: "Strategize",
     subtitle: "Build the Right Growth Plan",
     icon: ClipboardList,
-    image: "/process/planning.png",
-    phoneimage: "/process/planningphone.png",
+    image: "/process/strategize.png",
+    phoneimage: "/process/strategizephone.png",
     description:
       "Every strategy is tailored around your brand's objectives, audience, and unit economics to maximize sustainable growth and measurable business outcomes.",
     points: [
@@ -48,8 +48,8 @@ export const processSteps = [
     title: "Optimize",
     subtitle: "Improve Every Touchpoint",
     icon: Code2,
-    image: "/process/development.png",
-    phoneimage: "/process/developmentphone.png",
+    image: "/process/optimize.png",
+    phoneimage: "/process/optimizephone.png",
     description:
       "We continuously optimize affiliate, influencer, and e-Commerce funnels using real-time performance insights to improve conversions and reduce acquisition costs.",
     points: [
@@ -66,8 +66,8 @@ export const processSteps = [
     title: "Report",
     subtitle: "Measure What Matters",
     icon: Rocket,
-    image: "/process/launch.png",
-    phoneimage: "/process/launchphone.png",
+    image: "/process/report.png",
+    phoneimage: "/process/reportphone.png",
     description:
       "Stay informed with transparent reporting that focuses on ROI, Cost Per Acquisition (CPA), and the key performance metrics that drive your business growth.",
     points: [

@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import animationtop from "../../assets/animationtop.gif";
+// import animationtop from "../../assets/animationtop.gif";
+import animationtop from "../../assets/heroanimation.gif";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -86,7 +87,7 @@ const Hero = () => {
             <img
               src={animationtop}
               alt="Digital Marketing"
-              className="w-full max-w-xl"
+              className="w-full max-w-xl rounded-2xl"
             />
 
           </motion.div>

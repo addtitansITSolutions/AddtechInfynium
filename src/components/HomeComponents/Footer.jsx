@@ -8,6 +8,29 @@ import {
 import { Link } from "react-router-dom";
 import { useNavigate  } from "react-router-dom";
 
+const socialLinks = [
+  {
+    name: "Facebook",
+    icon: Facebook,
+    url: "https://www.facebook.com/people/Addtechinfinium/61557504621988/?mibextid=LQQJ4d",
+  },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    url: "https://www.instagram.com/addtechinfinium/",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/company/yourcompany",
+  },
+  {
+    name: "Twitter",
+    icon: Twitter,
+    url: "https://twitter.com/yourprofile",
+  },
+];
+
 const Footer = () => {
   const navigate = useNavigate();
   return (
@@ -67,18 +90,17 @@ const Footer = () => {
 
             <div className="flex gap-4 mt-8">
 
-              {[Facebook, Instagram, Linkedin, Twitter].map((Icon, index) => (
-
+              {socialLinks.map(({ name, icon: Icon, url }) => (
                 <a
-                  key={index}
-                  href="#"
+                  key={name}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={name}
                   className="w-11 h-11 rounded-full bg-white/10 hover:bg-white hover:text-[#053d27] transition flex items-center justify-center"
                 >
-
                   <Icon size={20} />
-
                 </a>
-
               ))}
 
             </div>
@@ -168,7 +190,7 @@ const Footer = () => {
 
               <p>📧 info@addtechinfinium.com</p>
 
-              <p>📞 +91-8447286658</p>
+              <p>📞 +91-</p>
 
               <p>
                  <h2>📍 HQ Address</h2>
