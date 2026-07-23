@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 // import animationtop from "../../assets/animationtop.gif";
 import animationtop from "../../assets/heroanimation.gif";
+import aboutimg from "../../assets/aboutimg.webp";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +10,11 @@ const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative overflow-hidden bg-white pt-32 pb-20">
+    <section className="relative overflow-hidden bg-white bg-cover bg-center bg-no-repeat pt-32 pb-20 min-h-[100vh] flex items-center"
+      style={{
+      backgroundImage: "url('/HeroBG.png')",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -26,19 +31,22 @@ const Hero = () => {
               Marketing Built Around Scalable Outcomes
             </span>
 
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-gray-900">
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
               Marketing Built for
               <span className="text-[#053d27]"> Scalable Outcomes </span>
             </h1>
 
-            <p className="mt-8 text-lg leading-8 text-gray-600 max-w-xl">
-              At Addtech Infinium, great marketing doesn't just build awareness—it
+            {/* <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl">
+              At Addtech Infinium, great marketing doesn't just build awareness , it
               drives measurable results. We deliver performance-led solutions in
               performance marketing, digital marketing, influencer marketing, and
               e-Commerce, helping brands reach their target audience, optimize
               every touchpoint, and grow with confidence. From generating
               impressions to creating visible business impact, Addtech Infinium
               handholds your growth every step of the way.
+            </p> */}
+            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl">
+              Addtech Infinium helps brands achieve measurable growth through performance-driven digital, affiliate, influencer, and e-commerce marketing solutions.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-5">
@@ -85,9 +93,10 @@ const Hero = () => {
           >
 
             <img
-              src={animationtop}
+              // src={aboutimg}
+              src="/HeroBanner.png"
               alt="Digital Marketing"
-              className="w-full max-w-xl "
+              className="w-full max-w-xl"
             />
 
           </motion.div>
