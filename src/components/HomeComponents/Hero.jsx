@@ -12,8 +12,14 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-white bg-cover bg-center bg-no-repeat pt-32 pb-20 min-h-[100vh] flex items-center"
       style={{
-      backgroundImage: "url('/HeroBG.png')",
-      }}
+      backgroundImage: `
+        linear-gradient(
+          rgba(10, 54, 37, 0.35),
+          rgba(255, 255, 255, 0.81)
+        ),
+        url('/HeroBG.png')
+      `,
+    }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -49,7 +55,7 @@ const Hero = () => {
               Addtech Infinium helps brands achieve measurable growth through performance-driven digital, affiliate, influencer, and e-commerce marketing solutions.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-5">
+            <div className="mt-6 flex flex-wrap gap-5">
 
               <button className="bg-[#053d27] text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/contact')}>
                 Build Your Growth
@@ -62,7 +68,7 @@ const Hero = () => {
 
             </div>
 
-            <div className="mt-14 flex gap-12">
+            <div className="mt-6 flex gap-12">
 
               <div>
                 <h2 className="text-3xl font-bold text-[#053d27]">100+</h2>
