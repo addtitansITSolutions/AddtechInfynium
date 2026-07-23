@@ -27,9 +27,9 @@ const Hero = () => {
             transition={{ duration: 0.7 }}
           >
 
-            <span className="inline-flex items-center rounded-full bg-[#053d27]/10 text-[#053d27] px-4 py-2 text-sm font-semibold mb-6">
+            {/* <span className="inline-flex items-center rounded-full bg-[#053d27]/10 text-[#053d27] px-4 py-2 text-sm font-semibold mb-6">
               Marketing Built Around Scalable Outcomes
-            </span>
+            </span> */}
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
               Marketing Built for
